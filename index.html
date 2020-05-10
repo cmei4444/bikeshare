@@ -4,14 +4,58 @@
             Citi Bike Stations and Traffic Congestion
         </title>
         <link href="styles.css" rel="stylesheet">
+        <div class="topnav">
+            <a class="active" href="#home">C I T I B I K E S &nbsp;&nbsp;&nbsp;&nbsp;A N D &nbsp;&nbsp;&nbsp;&nbsp;T R A F F I C </a>
+        </div>
     </head>
 
     <body>
-      <h1>Effects of Citi Bike Stations on Traffic Congestion</h1>
 
-      <p>test content<p>
+        <div id="overlaybox">
+            <p>Welcome to a website that analyzes correlation between CitiBike stations and traffic!</p>
+            <p></p>
+            <p>Click on a station to view before and after bike and car traffic data around the station</p>
+            <p></p>
+            <p>Click on the Uber/CitiBike toggle below any time to compare car and bike traffic
+        </div>
 
-      <iframe src="uber_1.html" height="800" width="1000"></iframe>
+        <div id="togglemode">
+            <p id="togglemodebutton1" class="on" style="float:left;" onClick="toggle_uber()"> UBER SPEEDS</p> 
+            <p id="togglemodebutton2" class="off" style="float:right" onClick="toggle_bike()"> CITIBIKE </p>
+        </div>
+
+        <iframe id="mainframe1" class="visible" src="uber_1.html"></iframe>
+        <iframe id="mainframe2" class="hidden" src="uber_2.html"></iframe>
 
     </body>
 </html>
+
+
+<script type="text/javascript">
+
+    function toggle_uber () {
+        var mf1 = document.getElementById("mainframe1");
+        var mf2 = document.getElementById("mainframe2");
+        var b1 = document.getElementById("togglemodebutton1");
+        var b2 = document.getElementById("togglemodebutton2");
+
+        mf1.className = "visible";
+        mf2.className = "hidden"
+        b1.className = "on";
+        b2.className = "off";
+    }
+
+    function toggle_bike () {
+        var mf1 = document.getElementById("mainframe1");
+        var mf2 = document.getElementById("mainframe2");
+        var b1 = document.getElementById("togglemodebutton1");
+        var b2 = document.getElementById("togglemodebutton2");
+
+        mf1.className = "hidden";
+        mf2.className = "visible"
+        b1.className = "off";
+        b2.className = "on";
+    }
+
+
+</script>

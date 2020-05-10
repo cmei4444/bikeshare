@@ -29,7 +29,7 @@ body {
 }
 
 #mainframe.visible {
-	width: 110%;
+	width: 100%;
 	height: 93%;
 	margin-top: 10px;
 	margin-left: -10px;

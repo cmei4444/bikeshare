@@ -28,19 +28,19 @@ body {
   color: black;
 }
 
-#mainframe1.visible {
+#mainframe.visible {
 	width: 110%;
 	height: 93%;
 	margin-top: 10px;
 	margin-left: -10px;
 	margin-right: -10px;
-	z-index: -100;
+	/* z-index: -100; */
 	overflow: hidden;
 	visibility: visible;
 	position: absolute;
 }
 
-#mainframe1.hidden {
+/* #mainframe1.hidden {
 	width: 110%;
 	height: 93%;
 	margin-top: 10px;
@@ -50,34 +50,7 @@ body {
 	overflow: hidden;
 	visibility: hidden;
 	position: absolute;
-
-}
-
-#mainframe2.visible {
-	width: 110%;
-	height: 93%;
-	margin-top: 10px;
-	margin-left: -10px;
-	margin-right: -10px;
-	z-index: -50;
-	overflow: hidden;
-	visibility: visible;
-	position: absolute;
-
-}
-
-#mainframe2.hidden {
-	width: 110%;
-	height: 93%;
-	margin-top: 10px;
-	margin-left: -10px;
-	margin-right: -10px;
-	z-index: -50;
-	overflow: hidden;
-	visibility: hidden;
-	position: absolute;
-
-}
+} */
 
 #togglemode {
 	z-index: 10;
@@ -124,5 +97,3 @@ body {
 #togglemodebutton2.off {
 	color: black;
 }
-
-

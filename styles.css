@@ -40,18 +40,6 @@ body {
 	position: absolute;
 }
 
-/* #mainframe1.hidden {
-	width: 110%;
-	height: 93%;
-	margin-top: 10px;
-	margin-left: -10px;
-	margin-right: -10px;
-	z-index: -50;
-	overflow: hidden;
-	visibility: hidden;
-	position: absolute;
-} */
-
 #togglemode {
 	z-index: 10;
 	background-color: #ed9d67;
@@ -96,4 +84,70 @@ body {
 
 #togglemodebutton2.off {
 	color: black;
+}
+
+/* Slider box styling */
+#current_day {
+  text-align: center;
+}
+
+#start_date {
+  float: left;
+}
+
+#end_date {
+  float: right;
+}
+
+.slidecontainer {
+  bottom: 100px;
+  left: 40px;
+  position: absolute;
+
+  height: 30px;
+  width: 500px; /* Width of the outside container */
+  background-color: #ed9d67;
+  border-style: solid;
+  border-color: gray;
+  border-width: 1px;
+  padding: 20px 40px;
+  font-size: 20px;
+  z-index: 10;
+
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 350px;
+  height: 20px; /* Specified height */
+  background: white;
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+  margin: 0 10px;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 20px; /* Set a specific slider handle width */
+  height: 20px; /* Slider handle height */
+  background: black; /* #963d00 */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+  width: 20px; /* Set a specific slider handle width */
+  height: 20px; /* Slider handle height */
+  background: black;
+  cursor: pointer; /* Cursor on hover */
 }

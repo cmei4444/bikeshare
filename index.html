@@ -19,13 +19,14 @@
             <p>Click on the Uber/CitiBike toggle below any time to compare car and bike traffic
         </div>
 
-        <div id="togglemode">
-            <p id="togglemodebutton1" class="on" style="float:left;" onClick="toggle_uber()"> UBER SPEEDS</p>
-            <p id="togglemodebutton2" class="off" style="float:right" onClick="toggle_bike()"> CITIBIKE </p>
-        </div>
-
         <iframe id="mainframe" class="visible" src="layered.html"></iframe>
 
+        <div class="slidecontainer">
+            <div id="start_date">April 1</div>
+            <div id="end_date">April 30</div>
+            <input type="range" min="1" max="30" value="1" class="slider" id="myRange">
+            <div id="current_day"></div>
+        </div>
     </body>
 </html>
 
@@ -34,23 +35,28 @@
 
     function toggle_uber () {
         var frame = document.getElementById("mainframe");
-        var b1 = document.getElementById("togglemodebutton1");
-        var b2 = document.getElementById("togglemodebutton2");
-
         frame.src = "uber_1.html";
-        b1.className = "on";
-        b2.className = "off";
     }
 
     function toggle_bike () {
         var frame = document.getElementById("mainframe");
-        var b1 = document.getElementById("togglemodebutton1");
-        var b2 = document.getElementById("togglemodebutton2");
-
         frame.src = "citi_1.html";
-        b1.className = "off";
-        b2.className = "on";
     }
 
+    var slider = document.getElementById("myRange");
+    var output = document.getElementById("current_day");
+    output.innerHTML = "April " + slider.value; // Display the default slider value
+
+    // Update the current slider value (each time you drag the slider handle)
+    slider.oninput = function() {
+      var frame = document.getElementById("mainframe");
+      output.innerHTML = "April " + this.value;
+      if (this.value > 15) {
+          x = 15;
+      } else {
+          x = 1;
+      }
+      frame.src = "citi_" + x + ".html";
+    }
 
 </script>

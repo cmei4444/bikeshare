@@ -57,7 +57,6 @@ body {
 
 #overlaybox {
 	width: 300px;
-	height: 300px;
 	z-index: 10;
 	background-color: #e3e3e3;
 	padding: 20px 40px;
@@ -68,6 +67,7 @@ body {
 	border-style: solid;
 	border-color: gray;
 	border-width: 1px;
+  opacity: 80%;
 }
 
 #togglemodebutton1.on {

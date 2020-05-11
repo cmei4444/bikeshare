@@ -17,11 +17,11 @@
             <p>Use the slider below to compare traffic over time.</p>
 
             <p>Use the Uber/CitiBike toggle in the top right to compare car and bike traffic.</p>
-            
+
             <p>Click on the station markers to see more information.</p>
         </div>
 
-        <iframe id="mainframe" class="visible" src="layered.html"></iframe>
+        <iframe id="mainframe" class="visible" src="layered_maps/layered_1.html"></iframe>
 
         <div class="slidecontainer">
             <div id="start_date">April 1</div>
@@ -53,12 +53,7 @@
     slider.oninput = function() {
       var frame = document.getElementById("mainframe");
       output.innerHTML = "April " + this.value;
-      if (this.value > 15) {
-          x = 15;
-      } else {
-          x = 1;
-      }
-      frame.src = "citi_" + x + ".html";
+      frame.src = "layered_maps/layered_" + this.value + ".html";
     }
 
 </script>

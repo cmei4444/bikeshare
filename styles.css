@@ -89,6 +89,7 @@ body {
 /* Slider box styling */
 #current_day {
   text-align: center;
+  margin-top: -55px;
 }
 
 #start_date {
@@ -105,12 +106,12 @@ body {
   position: absolute;
 
   height: 30px;
-  width: 500px; /* Width of the outside container */
+  width: 400px; /* Width of the outside container */
   background-color: #ed9d67;
   border-style: solid;
   border-color: gray;
   border-width: 1px;
-  padding: 20px 40px;
+  padding: 20px 20px 40px 20px;
   font-size: 20px;
   z-index: 10;
 
@@ -120,14 +121,14 @@ body {
 .slider {
   -webkit-appearance: none;  /* Override default CSS styles */
   appearance: none;
-  width: 350px;
+  width: 400px;
   height: 20px; /* Specified height */
   background: white;
   outline: none; /* Remove outline */
   opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
   -webkit-transition: .2s; /* 0.2 seconds transition on hover */
   transition: opacity .2s;
-  margin: 0 10px;
+  margin: 5 0px;
 }
 
 /* Mouse-over effects */

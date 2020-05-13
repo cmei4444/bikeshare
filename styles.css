@@ -6,7 +6,7 @@ body {
 
 .topnav {
 	margin: -10px;
-	background-color: #ed9d67;
+	background-color: #C6DABF;
 	overflow: hidden;
 	z-index: 10;
 /*	position: fixed;
@@ -14,7 +14,7 @@ body {
 }
 .topnav a {
   float: left;
-  color: #ed9d67;
+  color: #C6DABF;
   text-align: center;
   padding: 20px 40px;
   text-decoration: none;
@@ -24,7 +24,7 @@ body {
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: #ed9d67;
+  background-color: #C6DABF;
   color: black;
 }
 
@@ -42,7 +42,7 @@ body {
 
 #togglemode {
 	z-index: 10;
-	background-color: #ed9d67;
+	background-color: #C6DABF;
 	padding: 0px 40px;
 	font-size: 20px;
 	bottom: 100px;
@@ -58,7 +58,7 @@ body {
 #overlaybox {
 	width: 300px;
 	z-index: 10;
-	background-color: #e3e3e3;
+	background-color: #fffef5;
 	padding: 20px 40px;
 	font-size: 20px;
 	top: 200px;
@@ -107,7 +107,7 @@ body {
 
   height: 30px;
   width: 400px; /* Width of the outside container */
-  background-color: #ed9d67;
+  background-color: #C6DABF;
   border-style: solid;
   border-color: gray;
   border-width: 1px;
@@ -123,7 +123,7 @@ body {
   appearance: none;
   width: 400px;
   height: 20px; /* Specified height */
-  background: white;
+  background: #FEFCE6;
   outline: none; /* Remove outline */
   opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
   -webkit-transition: .2s; /* 0.2 seconds transition on hover */
@@ -142,13 +142,13 @@ body {
   appearance: none;
   width: 20px; /* Set a specific slider handle width */
   height: 20px; /* Slider handle height */
-  background: black; /* #963d00 */
+  background: #114B5F; /* #963d00 */
   cursor: pointer; /* Cursor on hover */
 }
 
 .slider::-moz-range-thumb {
   width: 20px; /* Set a specific slider handle width */
   height: 20px; /* Slider handle height */
-  background: black;
+  background: #114B5F;
   cursor: pointer; /* Cursor on hover */
 }
